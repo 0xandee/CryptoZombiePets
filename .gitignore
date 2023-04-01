@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.lock
+*.socket
+
+# Dependencies
+node_modules/
+
+# Production build
+build/
+
+# Environment variables
+.env
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
