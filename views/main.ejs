@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+
+    <!-- Page Title -->
+    <title>Zombie Pets Blockchain Game</title>
+    <!-- / -->
+
+    <!---Font Icon-->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- / -->
+
+    <!-- Plugin CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- / -->
+
+    <!-- Theme Style -->
+    <link href="/css/style.css?v=4" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <!-- / -->
+
+    <!-- Favicon -->
+    <link rel="icon"  href="/images/header-logo.png" />
+    <script src="/web3/web3.min.js"></script>
+    <!-- / -->
+</head>
+
+<!-- Body Start -->
+
+<body class="body-back" data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+
+    <!-- back to top start -->
+    <a href="#" id="back-top-btn"><img  src="/images/living-dead.png" class="img-fluid" alt=""></a>
+    <!-- back to top end -->
+
+    <!-- Loading -->
+
+    <!-- <div id="musa-loader">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <img  src="/images/preloader1.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Header -->
+    <header>
+        <nav id="nav-part" class="navbar header-nav other-nav sticky-top navbar-expand-md">
+            <div class="container menu-nav">
+                <a class="navbar-brand" href="#"><img  src="/images/logo_big.png" class="img-fluid" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item"><a class="nav-link <%= template == 'home'? 'active' : '' %> font-hello" href="/home">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="https://zombiepet.gitbook.io/whitepaper/" class="nav-link font-hello" >Whitepaper</a></li>
+                        <li class="nav-item"><a class="nav-link font-hello" href="#petsfamily">Zombie Pets</a></li>
+                        <li class="nav-item"><a class="nav-link font-hello" href="#gallery">Team</a></li>
+                        <li class="nav-item"><a class="nav-link font-hello" href="#ticket">Roadmap</a></li>
+                        <li class="nav-item"><a class="nav-link font-hello" href="#tokenomics">Tokenomics</a></li>
+                        <li class="nav-item"><a class="nav-link font-hello <%= template == 'airdrop'? 'active' : '' %>" href="/airdrop">Airdrop</a></li>
+                    </ul>
+
+                    <ul class="navbar-right nav-sign">
+                        <li><a id="btnMetamask" class="nav-link" href="#" >Metamask</a></li>
+                        <!--data-toggle="modal" data-target="#exampleModal2"-->
+                    </ul>
+                </div>
+                <!-- Sound -->
+
+
+            </div>
+        </nav>
+        
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+
+    <%- include (template +'.ejs') %> 
+
+    <!-- modal2 end -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuery -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/SmoothScroll.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- custom -->
+    <script src="/js/custom.js"></script>
+    <script src="/js/sound.js"></script>
+
+    <script src="/js/airdrop.js"></script>
+</body>
+<!-- Body End -->
+
+</html>

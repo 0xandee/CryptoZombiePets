@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZombiePet Gameplay</title>
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="logoMain">
+        <img id="logoM2"  src="./images/logo_1.png" alt="">
+    </div>
+
+    <div id="wrapper">
+        <div id="bar">
+            <div id="metamask">...</div>            
+            <div id="token_inwallet">0</div>
+            <div id="token_ingame">0</div>
+            <div id="claim_btn"></div>
+        </div>
+        <div id="bg" style="display: flex">
+            <div class="menu">
+                <div class="item">
+                    <a href="javascript:void(0)" onclick="loadMain('zombies')">
+                        <img src="/images/button/bt3.png" data-default="/images/button/bt3.png" > <!-- data-change="/images/button/hvbt1.png" -->
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="javascript:void(0)" onclick="loadMain('buybox')">
+                        <img src="/images/button/bt5.png" data-default="/images/button/bt5.png">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="javascript:void(0)" onclick="loadMain('logout')">
+                        <img src="/images/button/bt4.png" data-default="/images/button/bt4.png">
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="javascript:void(0)" onclick="loadMain('playgame')" style="display:block;width:200px; height:100px">
+                        
+                    </a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="home d-none">
+                    <div class="row">
+                        <div class="col-left">
+                            <div class="row item_pet" id="petsList">
+                                                                
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <div class="detail_pet" id="detail_pet">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buybox  d-none">
+                    <div class="card">
+                        <div class="image">
+                            <a href="javascript:void(0)">
+                                <img src="/images/avatar2/question.png">
+                            </a>
+                        </div>
+                        <div class="form-group">
+                            <div class="row row_center">
+                                <div class="col-2 p-2">
+                                    <button type="button" class="btn-default" id="down"><i class="fas fa-minus"></i></button>
+                                </div>
+                                <div class="col-8 p-2">
+                                    <div class="input">
+                                        <input type="text" value="1" id="number" class="input_default">
+                                    </div>
+                                </div>
+                                <div class="col-2 p-2">
+                                    <button type="button" class="btn-default" id="up"><i class="fas fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="buyZombie" class="btn-default btn-buy" type="button">
+                            <div>BUY Zoombie</div>
+                            <div style="margin-top:5px"><span id="totalPrice">1000</span> ZPT</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="infoAlert">asdasd</div>
+
+        <div id="craft"></div>
+
+        <!--
+        
+        <div class="mintedZombie" style="background-image: url('/images/avatar2/1.png');"></div>
+        <div class="mintedZombie" style="background-image: url('/images/avatar2/2.png');"></div>
+        -->
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./scripts/web3.min.js"></script>
+    <script src="./js/account.js"></script>
+    <script src="/js/layout.js"></script>
+</body>
+</html>

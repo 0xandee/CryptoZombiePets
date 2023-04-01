@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Pets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        html, body {
+            min-height: 100%;
+        }
+        body {
+            background-color: black;
+            background: url('home/bghome.jpg') no-repeat;
+            background-position: center bottom;
+            background-size: cover;
+        }
+
+        .bg {
+            background-color: black;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            opacity: 1;
+            transition: all .7s;
+        }
+
+        .info {
+            position: absolute;
+            z-index: 99;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -30%);
+        }
+
+        img {
+            max-width: 220px;
+            margin: auto;
+        }
+        #logo {
+            width: 100%;
+            max-width: 270px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">&nbsp;</div>
+    <div class="text-center info">
+        <h1 class="callout-title animate__animated animate__backInUp animate__fast"><a href="/"><img id="logo" src="images/logo.png"></a></h1>
+        <p class="mb-3 callout-title animate__animated animate__pulse animate__faster animate__infinite animate__delay-1s"><a href="/home"><img src="home/icon-home.png"></a></a></p>
+        <p data-wow-delay="0.5s" class="callout-title animate__animated  animate__faster animate__pulse animate__infinite animate__delay-1s"><a href="https://app.zombiepets.io"><img src="home/icon-play.png"></a></a></p>
+    </div>
+    
+    <script src="home/lib/wow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>new WOW().init();</script>
+    <script>
+        var i = 1;
+        var setBg = setInterval(() => {
+            i -= 0.05;
+            
+            var bg = document.getElementsByClassName('bg');
+            bg[0].style.opacity = i;
+
+            if (i <= 0.5) {
+                clearInterval(setBg);
+            }
+        }, 200);
+
+
+        var source = "audio.mp3"
+        var audio = document.createElement("audio");
+        //
+        audio.autoplay = true;
+        //
+        audio.load()
+        audio.addEventListener("load", function() { 
+            audio.play(); 
+        }, true);
+        audio.src = source;
+    </script>
+</body>
+</html>
