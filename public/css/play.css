@@ -1,0 +1,22 @@
+#bg{width: 1024px; height: 576px; background-image: url("/images/bg1_1024x576.png"); float: left; position: relative;}
+
+.bubblexxx{width: 50px; height: 25px; background-image: url("/images/fire1.png");
+    text-align: center; color:rgb(197, 15, 15); font-size: small; font-weight: bold; padding-top: 35px;
+}
+
+.size0{width:30px; height:40px;}
+.size1{width:40px; height:60px;}
+.size2{width:50px; height:70px;}
+.size3{width:60px; height:90x;}
+.size4{width:70px; height:110px;}
+
+.pet{position: absolute;}
+
+#btnClaimAll{float:right; width:161px; height:100px; float:right; background-image: url("/images/btn_claimall.png"); margin: 10px; cursor: pointer;}
+
+#infoAlert{ background-image: url("/images/blood_token.png");
+    position:relative;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;}
